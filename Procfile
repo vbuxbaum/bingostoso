@@ -1,1 +1,1 @@
-web: gunicorn app:bingostoso
+web: gunicorn bingostoso:app
