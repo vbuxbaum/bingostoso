@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from random import sample
 
 app = Flask(__name__)
@@ -6,7 +6,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def home_page():
-    return "<h2>This is Bingostoso on-line!</h2>"
+    player = request.args.get('player')
+    if player:
+        return hello_player(player)
+    return render_template("home.html")
 
 
 @app.route("/<player>")
