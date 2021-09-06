@@ -31,7 +31,7 @@
 
 <body>
 
-  <h1>Hello {{ player }}</h1>
+  <h1>Olá, {{ player }}!</h1>
 
   <div class="grid-container">
     {% for value in first_card_values %}
@@ -41,7 +41,7 @@
     <div class="grid-item">
       <img src="../static/indiozim.png" alt="indiozim" style="width:100px;height:100px;">
     </div>
-    
+
     {% for value in second_card_values %}
     <div class="grid-item">{{value}}</div>
     {% endfor %}
