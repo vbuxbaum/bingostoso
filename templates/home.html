@@ -27,6 +27,7 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
         label {
             font-weight: bold;
         }
@@ -35,20 +36,37 @@
             background-color: #45a049;
         }
 
+        label {
+            color: #ffffff;
+        }
+
 
         div {
             border-radius: 5px;
             font-size: 20px;
-            background-color: #f2f2f2;
+            align-self: center;
+            text-align: center;
             padding: 20px;
+            background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        }
+
+        h1 {
+            background-image: linear-gradient(to left, violet, indigo, blue, yellow, orange, red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+
         }
     </style>
 </head>
 
 <body>
     <div>
+        <h1>Você chegou ao Bingostoso on-line!</h1>
         <form action="">
-            <label for="fname">Seu nome:</label><br>
+            <label for="fname">Digite seu nome:</label><br>
             <input type="text" id="player" name="player" value=""><br>
             <input type="submit" value="Gerar cartela">
         </form>
