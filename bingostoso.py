@@ -16,7 +16,7 @@ def home_page():
 def hello_player(player):
     card_values = gen_card()
     return render_template(
-        "card.jinja",
+        "card.html",
         player=player,
         first_card_values=card_values[0],
         second_card_values=card_values[1],
